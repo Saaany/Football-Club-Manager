@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="716.0" prefWidth="825.0" stylesheets="@../css_files/style3.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.searchWindowController">
+   <Label fx:id="labelClubName" layoutX="357.0" text="Club name">
+      <stylesheets>
+         <URL value="@../css_files/style1.css" />
+         <URL value="@../css_files/text1.css" />
+      </stylesheets>
+      <font>
+         <Font name="Broadway" size="36.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.621052622795105" green="0.0759064331650734" blue="0.14859259128570557" opacity="0.7200000286102295" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.12150747328996658" green="0.05317738652229309" blue="0.46315789222717285" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill></Label>
+   <Label layoutX="391.0" layoutY="48.0" stylesheets="@../css_files/text1.css" text="Search Window">
+      <font>
+         <Font name="Broadway" size="18.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.621052622795105" green="0.0759064331650734" blue="0.14859259128570557" opacity="0.7200000286102295" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.10389863699674606" green="0.03836257383227348" blue="0.43157893419265747" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill></Label>
+   <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#btnMaxSalaryClicked" prefHeight="48.0" prefWidth="200.0" text="Max Salary">
+      <stylesheets>
+         <URL value="@../css_files/style1.css" />
+      </stylesheets>
+   </Button>
+   <Button layoutX="17.0" layoutY="139.0" mnemonicParsing="false" onAction="#btnMaxAgeClicked" prefHeight="48.0" prefWidth="196.0" stylesheets="@../css_files/style1.css" text="Max Age" />
+   <Button layoutX="18.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnMaxHeightClicked" prefHeight="48.0" prefWidth="196.0" stylesheets="@../css_files/style1.css" text="Max Height" />
+   <Button layoutX="19.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnTysClicked" prefHeight="48.0" prefWidth="196.0" stylesheets="@../css_files/style1.css" text="Total Yearly Salary" />
+   <TextField fx:id="textFieldPosition" layoutX="17.0" layoutY="372.0" prefHeight="38.0" prefWidth="134.0" promptText="Enter Position" />
+   <TextField fx:id="textFieldCountry" layoutX="14.0" layoutY="426.0" prefHeight="38.0" prefWidth="134.0" promptText="Enter Country" />
+   <Button layoutX="146.0" layoutY="367.0" mnemonicParsing="false" onAction="#btnPositionShowClicked" prefHeight="48.0" prefWidth="71.0" stylesheets="@../css_files/style1.css" text="Show" />
+   <Button layoutX="146.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnCountryShowClicked" stylesheets="@../css_files/style1.css" text="Show" />
+   <Button layoutX="16.0" layoutY="483.0" mnemonicParsing="false" onAction="#btnSalaryRangeClicked" prefHeight="48.0" prefWidth="203.0" stylesheets="@../css_files/style1.css" text="Salary Range" />
+   <TextField fx:id="textFieldLower" layoutX="17.0" layoutY="531.0" prefHeight="38.0" prefWidth="203.0" promptText="Lower Range" />
+   <TextField fx:id="textFieldHigher" layoutX="17.0" layoutY="569.0" prefHeight="38.0" prefWidth="203.0" promptText="Higher Range" />
+   <ListView fx:id="searchListView" editable="true" fixedCellSize="80.0" layoutX="231.0" layoutY="77.0" prefHeight="626.0" prefWidth="578.0" />
+   <Button layoutX="13.0" layoutY="631.0" mnemonicParsing="false" onAction="#btnCloseClicked" prefHeight="48.0" prefWidth="210.0" stylesheets="@../css_files/style1.css" text="Go Back" />
+   <TextField fx:id="textFieldName" layoutX="17.0" layoutY="320.0" prefHeight="38.0" prefWidth="130.0" promptText="Enter Name" />
+   <Button layoutX="146.0" layoutY="315.0" mnemonicParsing="false" onAction="#btnNameShowClicked" prefHeight="40.0" prefWidth="71.0" stylesheets="@../css_files/style1.css" text="Show" />
+   <AnchorPane fx:id="tysWindow" layoutX="275.0" layoutY="141.0" prefHeight="498.0" prefWidth="484.0" visible="false">
+      <children>
+         <ImageView fx:id="clubImage" fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutX="87.0" layoutY="227.0" text="Total Yearly Salary">
+            <font>
+               <Font name="Bell MT Bold" size="36.0" />
+            </font>
+            <textFill>
+               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.7894737124443054" green="0.05847953259944916" blue="0.16812865436077118" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.05302144214510918" green="0.05302144214510918" blue="0.42105263471603394" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </textFill>
+         </Label>
+         <Label fx:id="labelTys" layoutX="169.0" layoutY="284.0" text="100000">
+            <textFill>
+               <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.05999673530459404" green="0.0551999993622303" blue="0.46000000834465027" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.6315789222717285" green="0.0748538002371788" blue="0.0748538002371788" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </textFill>
+            <font>
+               <Font name="Bell MT Bold" size="36.0" />
+            </font>
+            <graphic>
+               <Label text="\$">
+                  <textFill>
+                     <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                        <stops>
+                           <Stop>
+                              <color>
+                                 <Color red="0.05999673530459404" green="0.0551999993622303" blue="0.46000000834465027" />
+                              </color>
+                           </Stop>
+                           <Stop offset="1.0">
+                              <color>
+                                 <Color red="0.6315789222717285" green="0.0748538002371788" blue="0.0748538002371788" />
+                              </color>
+                           </Stop>
+                        </stops>
+                     </RadialGradient>
+                  </textFill>
+                  <font>
+                     <Font name="Bell MT Bold" size="36.0" />
+                  </font>
+               </Label>
+            </graphic>
+         </Label>
+      </children>
+   </AnchorPane>
+   <ListView fx:id="cwListView" editable="true" fixedCellSize="80.0" layoutX="231.0" layoutY="77.0" prefHeight="626.0" prefWidth="578.0" />
+   <AnchorPane fx:id="initialWindow" layoutX="231.0" layoutY="76.0" prefHeight="633.0" prefWidth="578.0" style="-fx-background-color: #05071F;">
+      <children>
+         <ImageView fitHeight="217.0" fitWidth="432.0" layoutX="73.0" opacity="0.78" pickOnBounds="true">
+            <image>
+               <Image url="@../Images/footbal%20manager.png" />
+            </image>
+         </ImageView>
+         <Label layoutX="113.0" layoutY="441.0" text="USE THE MENU FOR SEARCH" textFill="WHITE">
+            <font>
+               <Font name="Broadway" size="24.0" />
+            </font>
+         </Label>
+         <ImageView fx:id="initWindowImg" fitHeight="150.0" fitWidth="200.0" layoutX="215.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../Images/1.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+</AnchorPane>

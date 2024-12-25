@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="489.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.LoginController">
+   <children>
+      <Label layoutX="121.0" layoutY="236.0" text="Username">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="123.0" layoutY="288.0" text="Password">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="userText" layoutX="208.0" layoutY="230.0" prefHeight="26.0" prefWidth="307.0" promptText="Club Name" />
+      <ImageView fitHeight="219.0" fitWidth="483.0" layoutX="67.0" layoutY="11.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/footbal%20manager.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordText" layoutX="208.0" layoutY="282.0" prefHeight="26.0" prefWidth="307.0" promptText="Password" stylesheets="@../css_files/style1.css" />
+    <Button fx:id="resetButton" layoutX="452.0" layoutY="353.0" mnemonicParsing="false" onAction="#resetAction" stylesheets="@../css_files/style1.css" text="Reset" />
+      <Button fx:id="loginButton" layoutX="362.0" layoutY="353.0" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+   </children>
+   <stylesheets>
+      <URL value="@../css_files/style3.css" />
+      <URL value="@../css_files/style1.css" />
+   </stylesheets>
+</AnchorPane>

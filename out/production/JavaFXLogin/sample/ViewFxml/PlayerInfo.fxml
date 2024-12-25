@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="413.0" stylesheets="@../css_files/style3.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.PlayerInfoController">
+    <children>
+        <VBox fx:id="playerAlertBox" alignment="TOP_CENTER" prefHeight="390.0" prefWidth="413.0" stylesheets="@../css_files/style3.css">
+            <children>
+                <ImageView fx:id="imgPlayer" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets top="24.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../Images/1.png" />
+                    </image>
+                </ImageView>
+                <Label fx:id="labelName" stylesheets="@../css_files/text1.css" text="Player Name">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <graphic>
+                        <Label stylesheets="@../css_files/text1.css" text="Name : ">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelAge" stylesheets="@../css_files/text1.css" text="Player Age">
+                    <graphic>
+                        <Label text="Age:">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelHeight" stylesheets="@../css_files/text1.css" text="Height">
+                    <graphic>
+                        <Label stylesheets="@../css_files/text1.css" text="Height:">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelCountry" stylesheets="@../css_files/text1.css" text="Player Name">
+                    <graphic>
+                        <Label text="Country :">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelPosition" stylesheets="@../css_files/text1.css" text="Player Name">
+                    <graphic>
+                        <Label text="Position :">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelNumber" stylesheets="@../css_files/text1.css" text="Player Name">
+                    <graphic>
+                        <Label text="Number :">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+                <Label fx:id="labelSalary" stylesheets="@../css_files/text1.css" text="Player Name">
+                    <graphic>
+                        <Label stylesheets="@../css_files/text1.css" text="Salary :">
+                     <font>
+                        <Font name="Broadway" size="18.0" />
+                     </font></Label>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+                </Label>
+            </children>
+        </VBox>
+      <Button fx:id="btnClose" layoutX="249.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnCloseClicked" stylesheets="@../css_files/style1.css" text="Close" visible="false">
+         <font>
+            <Font name="Broadway" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnSell" layoutX="114.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnSellClicked" prefHeight="48.0" prefWidth="70.0" stylesheets="@../css_files/style1.css" text="Sell" visible="false" />
+      <Button fx:id="btnBuy" layoutX="113.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnBuyClicked" prefHeight="48.0" prefWidth="70.0" stylesheets="@../css_files/style1.css" text="Buy" visible="false" />
+      <Button fx:id="btnClose2" layoutX="173.0" layoutY="477.0" mnemonicParsing="false" onAction="#btnClose2Clicked" stylesheets="@../css_files/style1.css" text="Close" visible="false" />
+    </children>
+</AnchorPane>
